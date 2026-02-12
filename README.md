@@ -8,5 +8,6 @@ EnvironmentTarget Device: Local Gateway (192.168.1.1).Scanner OS: Windows 11 (25
 
 **🔍 Audit Results**
 Based on the initial packet capture analysis of the target 192.168.1.1:PortServiceStatusObservations53Domain (DNS)OpenResponded to SYN request.80HTTPOpenWeb management interface detected.443HTTPSOpenSecure web management detected.22SSHClosedPort rejected connection.23TelnetClosedPort rejected connection.
+
 **🚀 How to  perform** 
 run a scan similar to the one in this project, use the following command (requires administrative privileges):Bashnmap -sS -oA audit_report [YOUR_LOCAL_RANGE]RunTo
