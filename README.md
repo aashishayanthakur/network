@@ -7,7 +7,12 @@ Download Nmap from the official website.Network Identification: Determine your l
 EnvironmentTarget Device: Local Gateway (192.168.1.1).Scanner OS: Windows 11 (25H2), Tools: Dumpcap (Wireshark) 4.6.3.Scan Methodology: TCP SYN ScanThe project utilizes the -sS flag in Nmap, known as a "half-open" or "stealth" scan. It works by sending a SYN packet and observing the response without completing the three-way handshake.Open Port: Target responds with SYN/ACK.Closed Port: Target responds with RST/ACK.
 
 **🔍 Audit Results**
-Based on the initial packet capture analysis of the target ////////:PortServiceStatusObservations53Domain (DNS)OpenResponded to SYN request.80HTTPOpenWeb management interface detected.443HTTPSOpenSecure web management detected.22SSHClosedPort rejected connection.23TelnetClosedPort rejected connection.
+Based on the initial packet capture analysis of the target ////////:PortServiceStatusObservations53Domain
+(DNS)OpenResponded to SYN request.80HTTPOpenWeb management interface detected.443HTTPSOpenSecure web management detected.22SSHClosedPort rejected connection.23TelnetClosedPort rejected connection.
+
+![Uploading Screenshot (5).png…]()
+
+
 
 **🚀 How to  perform** 
 run a scan similar to the one in this project, use the following command (requires administrative privileges):Bashnmap -sS -oA audit_report [YOUR_LOCAL_RANGE]RunTo
