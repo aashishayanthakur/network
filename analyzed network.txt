@@ -1,0 +1,6 @@
+Port,Protocol,State,Service,Evidence
+53,TCP,Open,Domain (DNS),SYN/ACK received from target.
+80,TCP,Open,HTTP,SYN/ACK received from target.+1
+443,TCP,Open,HTTPS,SYN/ACK received from target.+1
+22,TCP,Closed,SSH,RST/ACK received from target.+1
+23,TCP,Closed,Telnet,RST/ACK received from target.
